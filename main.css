@@ -7746,9 +7746,9 @@ body.has-navbar-fixed-bottom {
     color: #4a4a4a;
     cursor: pointer;
     display: block;
-    height: 2rem;
+    height: 3rem;
     position: relative;
-    width: 2rem;
+    width: 3rem;
     margin-left: auto
 }
 
