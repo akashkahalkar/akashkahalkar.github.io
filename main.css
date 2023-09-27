@@ -10350,7 +10350,8 @@ print {
 }
 
 .columns.is-mobile {
-    display: flex
+    display: flex;
+    height: 70vh
 }
 
 .columns.is-multiline {
@@ -11909,7 +11910,7 @@ print {
 .hero.is-fullheight .hero-body>.container,
 .hero.is-fullheight-with-navbar .hero-body>.container {
     flex-grow: 1;
-    flex-shrink: 1
+    flex-shrink: 1;
 }
 
 .hero.is-halfheight {
@@ -11972,13 +11973,19 @@ print {
 .hero-head,
 .hero-foot {
     flex-grow: 0;
-    flex-shrink: 0
+    flex-shrink: 0;
+    height: 5vh;
+}
+
+.hero-foot {
+    margin-bottom: 10px;
 }
 
 .hero-body {
     flex-grow: 1;
     flex-shrink: 0;
-    padding: 3rem 1.5rem
+    padding: 3rem 1.5rem;
+    min-height: 88vh;
 }
 
 .section {
@@ -12147,7 +12154,7 @@ a.navbar-item:not(.button) {
 }
 
 #info-container .columns {
-    margin-bottom: 60px
+    margin-bottom: 40px
 }
 
 @media screen and (max-width:500px) {
@@ -12250,4 +12257,9 @@ kbd {
     vertical-align: middle;
     position: relative;
     top: -1px
+}
+
+.unicorn{
+    margin-left: 5px;
+    margin-right: 5px;
 }
