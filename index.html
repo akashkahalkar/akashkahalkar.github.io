@@ -31,7 +31,15 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-25562592-1');
 	</script>
+	<style>
+		#latest-repos-container h2 {
+			margin-bottom: 2rem;
+		}
 
+		#latest-repos h4 {
+			margin-bottom: 0.5rem;
+		}
+	</style>
 </head>
 
 <body>
@@ -40,7 +48,7 @@
 			<div class="container">
 				<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
 					<div class="navbar-brand">
-						<span class="navbar-item">Akash Kahalkar</span>
+						<span class="navbar-item">Akash Kahalkar  <span class="unicorn">🦄</span></span>
 						<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
 							<img src="hamb.png"/>
 							<span aria-hidden="true"></span>
@@ -60,23 +68,8 @@
 			</div>
 		</div>
 	</section>
-	<style>
-		#latest-repos-container h2 {
-			margin-bottom: 2rem;
-		}
 
-		#latest-repos h4 {
-			margin-bottom: 0.5rem;
-		}
-	</style>
-	<script type="module">
-		// Temp redirect for old URL
-		if (location.hash === '#apps') {
-			location.hash = '';
-			location.pathname = '/apps';
-		}
-	</script>
-	<section class="hero is-fullheight is-default">
+	<section class="hero is-default">
 		<div class="hero-body">
 			<div id="info-container" class="container has-text-centered">
 				<div class="columns is-vcentered">
@@ -103,12 +96,12 @@
 								</span>
 								<span>Code</span>
 							</a>
-							<a class="button is-large is-white" href="https://instagram.com/aakash_kahalkar">
+							<!--a class="button is-large is-white" href="https://instagram.com/aakash_kahalkar">
 								<span class="icon">
 									<i class="fas fa-camera" aria-hidden="true"></i>
 								</span>
 								<span>Instagram</span>
-							</a>
+							</a -->
 						</p>
 						<br>
 						<div id="info-container" class="container has-text-centered">
@@ -130,7 +123,9 @@
 				</div>
 			</div>
 		</div>
+	</section>
 
+	<section class="hero">
 		<div class="hero-foot">
 			<div class="container">
 				<div class="tabs is-centered">
@@ -142,5 +137,11 @@
 		</div>
 	</section>
 </body>
-
+<script type="module">
+	// Temp redirect for old URL
+	if (location.hash === '#apps') {
+		location.hash = '';
+		location.pathname = '/apps';
+	}
+</script>
 </html>
