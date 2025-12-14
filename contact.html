@@ -1,108 +1,82 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#3273DC">
-        <meta name="author" content="Akash Kahalkar">
-        <meta name="description" content="iOS Developer, Day Dreamer">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="Akash Kahlkar">
-        <meta property="og:url" content="apps.html">
-        <meta property="og:description" content="iOS Developer, Day Dreamer">
-        <meta property="og:image" content="images/akash_kahalkar">
-        <meta name="x-build-time" content="Mon, 27 Jan 2020 05:50:55 +0000">
-        <title>Contact | Akash Kahalkar</title>
-        <link rel="alternate" type="application/rss+xml" title="Akash Kahalkar' blog"
-            href="https://akashkahalkar.github.io">
-        <link rel="preload" href="font-awesome.woff" as="font" crossorigin>
-        <link rel="icon" href="favicon.png" sizes="32x32">
-        <link rel="stylesheet" href="main.css">
-        <script type="module" src="main.js"></script>
-    
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25562592-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-            gtag('config', 'UA-25562592-1');
-        </script>
-    
-    </head>
-    
-    <body>
-        <section class="hero">
-            <div class="hero-head">
-                <div class="container">
-                    <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
-                        <div class="navbar-brand">
-                            <span class="navbar-item">Akash Kahalkar</span>
-                            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                                <img src="hamb.png"/>
-                                <span aria-hidden="true"></span>
-                            </a>
-                        </div>
-                        
-                        <div class="navbar-menu">
-                            <div class="navbar-end">
-                                <a class="navbar-item is-tab" href="index.html">Home</a>
-                                <a class="navbar-item is-tab" href="apps.html">Apps</a>
-                                <a class="navbar-item is-tab" href="about.html">About</a>
-                                <a class="navbar-item is-tab  is-active" href="contact.html">Contact</a>
-                                <a class="navbar-item is-tab" href="https://medium.com/@aakash0x90">Blog</a>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#3273DC">
+    <meta name="author" content="Akash Kahalkar">
+    <meta name="description" content="iOS Developer, Day Dreamer">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Akash Kahlkar">
+    <meta property="og:url" content="apps.html">
+    <meta property="og:description" content="iOS Developer, Day Dreamer">
+    <meta property="og:image" content="images/akash_kahalkar">
+    <meta name="x-build-time" content="Mon, 27 Jan 2020 05:50:55 +0000">
+    <title>Contact | Akash Kahalkar</title>
+    <link rel="alternate" type="application/rss+xml" title="Akash Kahalkar' blog"
+        href="https://akashkahalkar.github.io">
+    <link rel="preload" href="font-awesome.woff" as="font" crossorigin>
+    <link rel="icon" href="favicon.png" sizes="32x32">
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.css">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <script type="module" src="main.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25562592-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-25562592-1');
+    </script>
+
+</head>
+
+<body>
+    <nav class="border fixed split-nav">
+        <div class="nav-brand">
+            <h3><a href="index.html">Akash Kahalkar</a></h3>
+        </div>
+        <div class="collapsible">
+            <input id="collapsible1" type="checkbox" name="collapsible1">
+            <label for="collapsible1">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </label>
+            <div class="collapsible-body">
+                <ul class="inline">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="apps.html">Apps</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://medium.com/@aakash0x90">Blog</a></li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </nav>
 
-
-
-    <section class="hero is-fullheight is-default">
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns is-vcentered is-centered is-text-centered">
-                    <div class="column is-half is-narrow content">
-                        <style>
-                            .hero-body .column {
-                                margin-bottom: 180px;
-                            }
-
-                            #email {
-                                text-align: center;
-                                font-size: 25px;
-                            }
-                        </style>
-                        <!--script type="module">
-                            // Forwards `subject` and `body` search params to the email link
-
-                            const originalSearchParams = new URLSearchParams(location.search);
-                            const element = document.querySelector('#email a');
-
-                            const searchParams = new URLSearchParams();
-                            if (originalSearchParams.has('subject')) {
-                                searchParams.set('subject', originalSearchParams.get('subject'));
-                            }
-                            if (originalSearchParams.has('body')) {
-                                searchParams.set('body', originalSearchParams.get('body'));
-                            }
-
-                            element.search = searchParams.toString();
-                        </script-->
-                        <h1 id="contact">Contact</h1>
-                        <p>Please don't hesitate to get in touch with me if you have any ideas and are seeking someone to collaborate on them.</p>
-                        <hr />
-                        <!--p> <a href = "/Resume/Resume_akash.pdf">Resume </a></p>
-                        <p> <a href = "/Resume/akash_kahalkar_cove_letter.pdf">Cover letter</a></p-->
-                        <p> <a href = "mailto:akash.kahalkar.08@gmail.com?subject=Reference from gihub.com" >Mail me!</a> </p>
-                        <!--p> <a href = "https://www.fiverr.com/users/akashkahalkar/">Hire me on fiverr!</a> </p-->
-                    </div>
+    <div class="container" style="margin-top: 5rem;">
+        <div class="row flex-center">
+            <div class="col-8 col-md-8 sm-12 has-text-centered">
+                <div class="paper">
+                    <style>
+                        /* Local style for specific alignment if needed, PaperCSS handles most */
+                        #email {
+                            text-align: center;
+                            font-size: 25px;
+                        }
+                    </style>
+                    <h1 id="contact">Contact</h1>
+                    <p>Please don't hesitate to get in touch with me if you have any ideas and are seeking someone to
+                        collaborate on them.</p>
+                    <hr />
+                    <p> <a class="paper-btn"
+                            href="mailto:akash.kahalkar.08@gmail.com?subject=Reference from gihub.com">Mail me!</a> </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </body>
 
 </html>
