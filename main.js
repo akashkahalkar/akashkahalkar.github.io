@@ -21,11 +21,3 @@ const menuLabel = document.querySelector('.collapsible label');
 if (menuLabel) {
     menuLabel.addEventListener('click', playPaperSound);
 }
-
-// Add sound to all cards
-// Note: Cards are often inside <a> tags, so the click bubbles up.
-// We can attach to the card itself.
-const cards = document.querySelectorAll('.card');
-cards.forEach(card => {
-    card.addEventListener('click', playPaperSound);
-});
