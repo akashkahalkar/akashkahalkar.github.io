@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +18,8 @@
         href="https://akashkahalkar.github.io">
     <link rel="preload" href="font-awesome.woff" as="font" crossorigin>
     <link rel="icon" href="favicon.png" sizes="32x32">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.css">
+    <!-- <link rel="stylesheet" href="main.css"> -->
     <script type="module" src="main.js"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25562592-1"></script>
@@ -31,200 +33,231 @@
 </head>
 
 <body>
-    <section class="hero">
-        <div class="hero-head">
-            <div class="container">
-                <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
-                    <div class="navbar-brand">
-                        <span class="navbar-item">Akash Kahalkar</span>
-                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-							<img src="hamb.png"/>
-							<span aria-hidden="true"></span>
-						</a>
+    <nav class="border fixed split-nav">
+        <div class="nav-brand">
+            <h3><a href="index.html">Akash Kahalkar</a></h3>
+        </div>
+        <div class="collapsible">
+            <input id="collapsible1" type="checkbox" name="collapsible1">
+            <label for="collapsible1">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </label>
+            <div class="collapsible-body">
+                <ul class="inline">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="apps.html">Apps</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://medium.com/@aakash0x90">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 5rem;">
+
+        <div class="row flex-center">
+            <div class="col-12 paper">
+                <div id="apps">
+                    <h2 class="title is-2">Apps</h2>
+                    <br>
+                    <style>
+                        /* Ensure columns have padding for horizontal space */
+                        .col-12.md-4 {
+                            padding: 1rem;
+                        }
+
+                        /* Make cards fill the column height */
+                        .card {
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                        .card-body {
+                            flex: 1;
+                        }
+                    </style>
+
+                    <div class="row">
+
+                        <div class="col-12 md-4">
+                            <a href="https://github.com/akashkahalkar/PeopleInSpace/">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <figure class="image">
+                                            <img src="/screenshots/scr_people_in_space.png" width="200" height="432">
+                                        </figure>
+                                        <h4 class="card-title">
+                                            <span>People In Space</span>
+                                            <span class="badge secondary">iOS</span>
+                                        </h4>
+                                        <p class="card-text">🛰️Get list of People in Space!</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-12 md-4">
+                            <a href="https://github.com/akashkahalkar/Neumorphism_SwiftUI">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <figure class="image">
+                                            <img src="/screenshots/screen_1.png" width="200" height="432">
+                                        </figure>
+                                        <h4 class="card-title">
+                                            <span>Neuomorphism with Swift UI</span>
+                                            <span class="badge warning">SWIFT UI</span>
+                                        </h4>
+                                        <p class="card-text">🌘 Playaground to play with shadows</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-12 md-4">
+                            <a href="https://github.com/akashkahalkar/TicTacToe">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <figure class="image">
+                                            <img src="/screenshots/scr_ttt.png" width="200" height="432">
+                                        </figure>
+                                        <h4 class="card-title">
+                                            <span>Tic Tac Toe</span>
+                                            <span class="badge secondary">iOS</span>
+                                        </h4>
+                                        <p class="card-text">🎲 Ancient Tic Tac Toe in Advance swift 5</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-12 md-4">
+                            <a href="https://github.com/akashkahalkar/AttemptAtSwiftUI">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <figure class="image">
+                                            <img src="/screenshots/chat.png" width="200" height="432">
+                                        </figure>
+                                        <h4 class="card-title">
+                                            <span>Avengers chat in SwiftUI</span>
+                                            <span class="badge warning">SwiftUI</span>
+                                        </h4>
+                                        <p class="card-text">😎 Playing with SwiftUI elements</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    
-                    <div class="navbar-menu">
-                        <div class="navbar-end">
-                            <a class="navbar-item is-tab" href="index.html">Home</a>
-                            <a class="navbar-item is-tab is-active" href="apps.html">Apps</a>
-                            <a class="navbar-item is-tab" href="about.html">About</a>
-                            <a class="navbar-item is-tab" href="contact.html">Contact</a>
-                            <a class="navbar-item is-tab" href="https://medium.com/@aakash0x90">Blog</a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row flex-center">
+            <div class="col-12 paper">
+                <div id="scripts">
+                    <h2 class="title is-2">Scripts</h2>
+                    <br>
+
+                    <div class="row">
+
+                        <div class="col-12 md-4">
+                            <a href="https://github.com/akashkahalkar/PriceTrackerForAmazon">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <figure class="image">
+                                            <img src="/screenshots/amazon.png">
+                                        </figure>
+                                        <h4 class="card-title">
+                                            <span>Price Tracker For Amazon</span>
+                                            <span class="badge success">Python</span>
+                                        </h4>
+                                        <p class="card-text">Track product prices on Amazon.in</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
+
+                        <div class="col-12 md-4">
+                            <a href="https://gist.github.com/akashkahalkar/0507e0450c3fff667c9e482a22b0180d">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <figure class="image">
+                                            <img src="/screenshots/catlog.png">
+                                        </figure>
+                                        <h4 class="card-title">
+                                            <span>Cat Log</span>
+                                            <span class="badge secondary">swift</span>
+                                        </h4>
+                                        <p class="card-text">Basic logger for logging with visual treats.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-12 md-4">
+                            <a href="https://gist.github.com/akashkahalkar/71da218adb4d2684f0bcdbc03a52e9b5">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <figure class="image">
+                                            <img src="/screenshots/hashing.png">
+                                        </figure>
+                                        <h4 class="card-title">
+                                            <span>String Extension to support Hashing function </span>
+                                            <span class="badge secondary">swift</span>
+                                        </h4>
+                                        <p class="card-text">Supports creating string digest with MD5 and sha256
+                                            alogorithms.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-12 md-4">
+                            <a href="https://github.com/akashkahalkar/TicTacToe_CommandLine_python">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <figure class="image">
+                                            <img src="">
+                                        </figure>
+                                        <h4 class="card-title">
+                                            <span>Tic Tac Toe</span>
+                                            <span class="badge success">python</span>
+                                        </h4>
+                                        <p class="card-text">CLI tic tac toe written in python.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-12 md-4">
+                            <a href="https://github.com/akashkahalkar/finder">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <figure class="image">
+                                            <img src="">
+                                        </figure>
+                                        <h4 class="card-title">
+                                            <span>File Finder</span>
+                                            <span class="badge">batch</span>
+                                        </h4>
+                                        <p class="card-text">Command line search for drastically faster search results
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
-                </nav>
-            </div>
-        </div>
-    </section>
-
-    <section class="section hero is-fullheight is-default is-bold">
-        <div id="apps" class="container">
-            <h2 class="title is-2">Apps</h2>
-            <br>
-
-            <div class="columns is-multiline">
-
-                <div class="column is-mobile is-half-tablet is-one-third-desktop">
-                    <a href="https://github.com/akashkahalkar/PeopleInSpace/">
-                        <div class="box">
-                            <figure class="image">
-                                <img
-                                    src="/screenshots/scr_people_in_space.png" width="200" height="432">
-                            </figure>
-                            <h2 class="title">
-                                <span>People In Space</span>
-                                <!--span class="tag is-small is-success">New!</span-->
-                                <span class="tag is-small">iOS</span>
-                            </h2>
-                            <p class="subtitle is-6">🛰️Get list of People in Space!</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="column is-mobile is-half-tablet is-one-third-desktop">
-                    <a href="https://github.com/akashkahalkar/Neumorphism_SwiftUI">
-                        <div class="box">
-                            <figure class="image">
-                                <img
-                                    src="/screenshots/screen_1.png" width="200" height="432">
-                            </figure>
-                            <h2 class="title">
-                                <span>Neuomorphism with Swift UI</span>
-                                <!--span class="tag is-small is-success">New!</span-->
-                                <span class="tag is-small">SWIFT UI</span>
-                            </h2>
-                            <p class="subtitle is-6">🌘 Playaground to play with shadows</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="column is-mobile is-half-tablet is-one-third-desktop">
-                    <a href="https://github.com/akashkahalkar/TicTacToe">
-                        <div class="box">
-                            <figure class="image">
-                                <img src="/screenshots/scr_ttt.png" width="200" height="432">
-
-                            </figure>
-                            <h2 class="title">
-                                <span>Tic Tac Toe</span>
-                                <span class="tag is-small">iOS</span>
-                            </h2>
-                            <p class="subtitle is-6">🎲 Ancient Tic Tac Toe in Advance swift 5</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="column is-mobile is-half-tablet is-one-third-desktop">
-                    <a href="https://github.com/akashkahalkar/AttemptAtSwiftUI">
-                        <div class="box">
-                            <figure class="image">
-                                <img src="/screenshots/chat.png" width="200" height="432">
-
-                            </figure>
-                            <h2 class="title">
-                                <span>Avengers chat in SwiftUI</span>
-                                <span class="tag is-small">SwiftUI</span>
-                            </h2>
-                            <p class="subtitle is-6">😎 Playing with SwiftUI elements</p>
-                        </div>
-                    </a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Scripts CLI-->
-    <section class="section hero is-fullheight is-default is-bold">
-        <div id="apps" class="container">
-            <h2 class="title is-2">Scripts</h2>
-            <br>
-
-            <div class="columns is-multiline">
-
-                <div class="column is-mobile is-half-tablet is-one-third-desktop">
-                    <a href="https://github.com/akashkahalkar/PriceTrackerForAmazon">
-                        <div class="box">
-                            <figure class="image">
-                                <img src="/screenshots/amazon.png">
-
-                            </figure>
-                            <h2 class="title">
-                                <span>Price Tracker For Amazon</span>
-                                <span class="tag is-small">Python</span>
-                            </h2>
-                            <p class="subtitle is-6">Track product prices on Amazon.in</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="column is-mobile is-half-tablet is-one-third-desktop">
-                    <a href="https://gist.github.com/akashkahalkar/0507e0450c3fff667c9e482a22b0180d">
-                        <div class="box">
-                            <figure class="image">
-                                <img
-                                    src="/screenshots/catlog.png">
-                            </figure>
-                            <h2 class="title">
-                                <span>Cat Log</span>
-                                <!--span class="tag is-small is-success">New!</span-->
-                                <span class="tag is-small">swift</span>
-                            </h2>
-                            <p class="subtitle is-6">Basic logger for logging with visual treats.</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="column is-mobile is-half-tablet is-one-third-desktop">
-                    <a href="https://gist.github.com/akashkahalkar/71da218adb4d2684f0bcdbc03a52e9b5">
-                        <div class="box">
-                            <figure class="image">
-                                <img src="/screenshots/hashing.png">
-
-                            </figure>
-                            <h2 class="title">
-                                <span>String Extension to support Hashing function </span>
-                                <span class="tag is-small">swift</span>
-                            </h2>
-                            <p class="subtitle is-6">Supports creating string digest with MD5 and sha256 alogorithms.</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="column is-mobile is-half-tablet is-one-third-desktop">
-                    <a href="https://github.com/akashkahalkar/TicTacToe_CommandLine_python">
-                        <div class="box">
-                            <figure class="image">
-                                <img src="">
-
-                            </figure>
-                            <h2 class="title">
-                                <span>Tic Tac Toe</span>
-                                <span class="tag is-small">python</span>
-                            </h2>
-                            <p class="subtitle is-6">CLI tic tac toe written in python.</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="column is-mobile is-half-tablet is-one-third-desktop">
-                    <a href="https://github.com/akashkahalkar/finder">
-                        <div class="box">
-                            <figure class="image">
-                                <img src="">
-
-                            </figure>
-                            <h2 class="title">
-                                <span>File Finder</span>
-                                <span class="tag is-small">batch</span>
-                            </h2>
-                            <p class="subtitle is-6">Command line search for drastically faster search results</p>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
+    </div>
 </body>
 
 </html>
